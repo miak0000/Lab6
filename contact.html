@@ -61,19 +61,43 @@
 
 <div class="container mt-5">
 <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-field">
-    <input type="checkbox" id="exampleCheck1" class="check">
-    <label for="exampleCheck1">Check me out</label>
-  </div>
+  <div class="row g-3 mb-3">
+    <div class="col-12 md:col-6 form-field">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" required>
+    </div>
+
+    <div class="col-12 md:col-6 form-field">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required>
+    </div>
+
+    <div class="mb-3 form-field">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
+    </div>
+
+    <div class="mb-3 form-field">
+      <label for="topic" class="form-label">Subject</label>
+      <select class="form-select" id="topic" required>
+        <option value="" selected disabled>Choose a topic...</option>
+        <option value="events">Club Events & Tickets</option>
+        <option value="membership">Joining a Club</option>
+        <option value="general">General Inquiry</option>
+      </select>
+    </div>
+
+    <div class="mb-3 form-field">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" required></textarea>
+    </div>
+
+    <div class="mb-3 form-field">
+      <input type="checkbox" id="consent" class="check" required>
+      <label for="consent">I agree to be contacted regarding my inquiry.</label>
+    </div>
+
   <button type="submit" class="btn-solid theme-primary">Submit</button>
 </form>
 </div>
