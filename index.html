@@ -29,7 +29,7 @@
             <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" aria-disabled="true" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
@@ -56,5 +56,36 @@
     </dialog>
   </div>
 </nav>
+
+<div class="container mt-5">
+  <div id="carouselStacked" class="carousel slide">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="mb-0">Top controls</h5>
+      <div>
+        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="carousel-inner rounded-5">
+      <div class="carousel-item active">
+        <img src="images/home.png" class="d-block w-100" alt="homepage of the website.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/club.png" class="d-block w-100" alt="event happening in DH.">
+      </div>
+      <div class="carousel-item">
+        <img src="images/info.png" class="d-block w-100" alt="more information about the club event.">
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>
