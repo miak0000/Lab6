@@ -94,7 +94,35 @@
         <div class="card-body">
           <h4 class="card-title">RSM Marketing Case Competition</h4>
           <p class="card-text">Ready, Set, Market! 🏁 Our 14th annual marketing case competition is back, and it'ss time to bring your ideas to life on November 15!</p>
-          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+          
+          <div class="accordion">
+              <details class="accordion-item" name="accordionExample" open>
+                <summary class="accordion-header">
+                  More information
+                  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                </summary>
+                <div class="accordion-body">
+                  <p class="card-text">Open to all years, all universities, and all majors. Teams of 3 to 5 students will have one full week to prepare a comprehensive strategic pitch, then present it to industry judges in a 10-minute presentation followed by a 5-minute Q&A.</p>
+                </div>
+              </details>
+          </div>
+          <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#exampleDialog">More information</button>
+            <dialog class="dialog" id="exampleDialog">
+              <div class="dialog-header">
+                <h1 class="dialog-title">Club detail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+              </div>
+              <div class="dialog-body">
+                <p>This is a native dialog element. It uses the browser's built-in modal behavior for accessibility and focus management.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                <button type="button" class="btn-solid theme-primary">More information</button>
+              </div>
+            </dialog>
+
+
+
         </div>
       </section>
     </div>
