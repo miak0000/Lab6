@@ -11,3 +11,7 @@
 --bs-theme-border: #0f766e;
 --bs-theme-contrast: #ffffff;
 }
+
+footer p{
+    align-items: center;
+}
